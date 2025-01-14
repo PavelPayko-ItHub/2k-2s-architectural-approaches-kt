@@ -1,0 +1,28 @@
+@import './__item/gallery__item.css';
+@import './__link/gallery__link.css';
+@import './__img/gallery__img.css';
+
+.gallery {
+	display: grid;
+	grid-template-columns: 1fr;
+	-webkit-gap: 8px;
+	-moz-gap: 8px;
+	gap: 8px;
+}
+@media (min-width: 375px) {
+	.gallery {
+		-webkit-gap: 16px;
+		-moz-gap: 16px;
+		gap: 16px;
+	}
+}
+@media only screen and (min-width: 720px) {
+	.gallery {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+@media only screen and (min-width: 1280px) {
+	.gallery {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+}
